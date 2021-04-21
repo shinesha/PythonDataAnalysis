@@ -60,22 +60,16 @@ with open('firstPostcodePattern.csv', 'w', newline='') as f:
 
 
 # QUESTION 3/
-print(len(typeOnePostcode))
 #ANN NAA
 typeTwoPostCode= re.findall(r'\b[A-Z]\d\d\s*\d[A-Z][A-Z]\b', inputFilePostCodeString)
-print(len(typeTwoPostCode))
 #AAN NAA
 typeThreePostCode= re.findall(r'\b[A-Z][A-Z]\d\s*\d[A-Z][A-Z]\b', inputFilePostCodeString)
-print(len(typeThreePostCode))
 #AANN NAA
 typeFourPostCode= re.findall(r'\b[A-Z][A-Z]\d\d\s*\d[A-Z][A-Z]\b', inputFilePostCodeString)
-print(len(typeFourPostCode))
 #ANA NAA
 typeFivePostCode= re.findall(r'\b[A-Z]\d[A-Z]\s*\d[A-Z][A-Z]\b', inputFilePostCodeString)
-print(len(typeFivePostCode))
 #AANA NAA
 typeSixPostCode= re.findall(r'\b[A-Z][A-Z]\d[A-Z]\s*\d[A-Z][A-Z]\b', inputFilePostCodeString)
-print(len(typeSixPostCode))
 
 
 AllTypePostCodes =  typeOnePostcode + typeTwoPostCode + typeThreePostCode + typeFourPostCode + typeFivePostCode + typeSixPostCode
